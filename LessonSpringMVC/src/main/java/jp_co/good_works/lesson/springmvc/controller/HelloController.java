@@ -9,17 +9,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-//@‚±‚Ìƒtƒ@ƒCƒ‹‚ÍƒRƒ“ƒgƒ[ƒ‰‚Å‚·‚Æ‚¢‚¤éŒ¾@MVCƒ‚ƒfƒ‹‚Å¡‰ñì¬‚µ‚Ä‚¢‚é‚Ì‚Å‹LÚ‚Í•K{
+// ï¿½@ï¿½ï¿½ï¿½Ìƒtï¿½@ï¿½Cï¿½ï¿½ï¿½ÍƒRï¿½ï¿½ï¿½gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Å‚ï¿½ï¿½Æ‚ï¿½ï¿½ï¿½ï¿½éŒ¾ï¿½@MVCï¿½ï¿½ï¿½fï¿½ï¿½ï¿½Åï¿½ï¿½ï¿½ì¬ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½Ì‚Å‹Lï¿½Ú‚Í•Kï¿½{
 @Controller
 public class HelloController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HelloController.class);
-	// /hello‚ÆƒAƒNƒZƒX‚³‚ê‚½‚ç@‰º‹Lhelloƒƒ\ƒbƒh‚ªÀs‚³‚ê‚éB
+	// /helloï¿½ÆƒAï¿½Nï¿½Zï¿½Xï¿½ï¿½ï¿½ê‚½ï¿½ï¿½@ï¿½ï¿½ï¿½Lhelloï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½B
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public String hello(Model model) {
-		//model‚Æ‚¢‚¤” ‚Émessage‚Æ‚¢‚¤‚È‚Ì–¼‘O‚ÅHallo Spring!‚Æ‚¢‚¤•¶š—ñ‚ğŠi”[‚µ‚Ä‚¢‚é
+		//modelï¿½Æ‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½messageï¿½Æ‚ï¿½ï¿½ï¿½ï¿½È‚Ì–ï¿½ï¿½Oï¿½ï¿½Hallo Spring!ï¿½Æ‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½iï¿½[ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½
 		model.addAttribute("message", "<script>alert()</script>" );
-		// hello.jsp‚Ö‘JˆÚ‚·‚é
+		// hello.jspï¿½Ö‘Jï¿½Ú‚ï¿½ï¿½ï¿½
 		return "hello";
 	}
 	
