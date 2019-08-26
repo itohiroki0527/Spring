@@ -30,7 +30,7 @@ public class DaoDb {
 				DriverManager.getConnection(URL, USER, PASS);
 			System.out.println("DB接続");
 			//insert文。?はカラムの数。?にnameやaddressを一旦格納している？
-			String SQL = "insert into information values (?,?,?,?,?,?);";
+			String SQL = "insert into infomation values (?,?,?,?,?,?);";
 			//先ほど作成したinsert文の中に?があるため、PreparedStatementを付けてあげる
 				PreparedStatement ps = conn.prepareStatement(SQL);//{
 				//ps.setStringで追加。番号,"nameとか"

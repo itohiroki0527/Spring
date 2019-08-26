@@ -11,23 +11,23 @@
 <body>
 <h2>${search_reg_mesage}</h2>
 <form:form modelAttribute="searchRegForm">
-		氏名<form:input path="inputName"  name="name"/>
+		氏名<form:input path="inputName"  name="name" placeholder="例:尾中須井太"/>
 			<form:errors path="inputName" cssStyle="color:red" /><br>
-			住所<form:input path="inputAdress"  name="adress"/>
+			住所<form:input path="inputAdress"  name="adress" placeholder="例:千葉県船橋市若松１丁目"/>
 			<form:errors path="inputAdress" cssStyle="color:red" /><br>
-				電話番号<form:input path="inputTel"  name="tel"/>
+				電話番号<form:input path="inputTel"  name="tel" placeholder="例:0471235678"/>
 				<form:errors path="inputTel" cssStyle="color:red" /><br>
-				宛先の氏名<form:input path="inputSendName"  name="sendname"/>
+				宛先の氏名<form:input path="inputSendName"  name="sendname" placeholder="例:岡根星井"/>
 				<form:errors path="inputSendName" cssStyle="color:red" /><br>
-					遺言内容<form:input path="inputMessage"  name="message"/>
+					遺言内容<form:input path="inputMessage"  name="message" placeholder="50文字まで"/>
 					<form:errors path="inputMessage" cssStyle="color:red" /><br>
-					あいことば<form:input path="inputAikotoba"  name="aikotoba"/>
+					あいことば<form:input path="inputAikotoba"  name="aikotoba" placeholder="20文字まで"/>
 					<form:errors path="inputAikotoba" cssStyle="color:red" /><br>
 		<input type="submit" name="send" value="送信" >
 		
 	</form:form>
 	<form:form modelAttribute="searchRegForm">
-					登録情報を検索<form:input path="inputInfo"  name="aikotobapass"/>
+					入力情報を表示したい場合、あいことばを入力してください<form:input path="inputInfo"  name="aikotobapass"/>
 		<input type="submit" name="c" value="検索" >
 
 		
